@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.cartao {
+    background-color: white;
+    border-radius: 20px;
+    width: 88%;
+    max-width: 340px;
+    overflow: hidden;
+}
+
+.cartao .ilustracao {
+    width: 100%;
+}
+
+.cartao .container {
+    padding: 10% 8%;
+    text-align: center;
+}
+
+.cartao .texto {
+    width: 95%;
+    margin: auto;
+}
+
+.cartao .titulo {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.4em;
+    margin-bottom: 10%;
+}
+
+.cartao .descricao {
+    color: var(--desaturated-blue);
+    font-size: .95em;
+    line-height: 1.6em;
+    margin-bottom: 10%;
+}
+
+.cartao .plano {
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    padding: 6%;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.cartao .plano .plano-info {
+    color: var(--desaturated-blue);
+    width: 35%;
+    line-height: 1.5em;
+    margin-left: 26%;
+}
+
+.cartao .plano .plano-info::before {
+    content: url("../order-summary-component-main/images/icon-music.svg");
+    top: 52%;
+    left: 6%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.cartao .plano .plano-tipo {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.cartao .plano .plano-mudar {
+    color: var(--bright-blue);
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.cartao .pagar {
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 10px;
+    font-size: .9em;
+    font-weight: 700;
+    padding: 6%;
+    margin-bottom: 8%;
+}
+
+.cartao .cancelar {
+    color: var(--desaturated-blue);
+    font-weight: 900;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao .texto {
+        width: 92%;
+    }
+}
